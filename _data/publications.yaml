@@ -1,38 +1,74 @@
 papers:
 
-  - title: "Constrained Control for Systems on Lie Groups with Uncertainties via Tube-based Model Predictive Control on Euclidean Spaces,"
-    authors: "Yushu Yu, <b>Chuanbeibei Shi</b>, Yuwei Ma, Dong Eui CHANG"
-    venue: "ICCSIP'21: International Conference on Cognitive Systems and Information Processing. 2021."
-    # paper_pdf: "https://link.springer.com/chapter/10.1007/978-981-16-9247-5_12"
+  - title: "Real-Time Multi-Modal Active Vision for Object Detection on UAVs Equipped With Limited Field of View LiDAR and Camera"
+    authors: "<b>Chuanbeibei Shi</b>,  Ganghua Lai, Yushu Yu, Mauro Bellone, Vincezo Lippiello"
+    venue: "IEEE Robotics and Automation Letters, 2023."
+    paper_pdf: "/assets/publications/2023_active_vision.pdf"
     selected: y
+ 
 
-  - title: "A Hierarchical Control Scheme for Multiple Aerial Vehicle Transportation Systems with Uncertainties and State/Input Constraints"
-    authors: "Yushu Yu, <b>Chuanbeibei Shi</b>, Dan Shan, Vincenzo Lippiello, Yi Yang."
-    venue: "Applied Mathematical Modelling. 2022."
-    # paper_pdf: "https://www.sciencedirect.com/science/article/abs/pii/S0307904X22002268"
+  - title: "Variable Admittance Interaction Control of UAVs via Deep Reinforcement Learning"
+    authors: "Yuting Feng, <b>Chuanbeibei Shi</b>, Jianrui Du, Yushu Yu, Fuchun Sun, Yixu Song"
+    venue: "IEEE International Conference on Robotics and Automation (ICRA), 2023."
+    paper_pdf: "/assets/publications/Variable_Admittance_icra.pdf"
     # code: "https://github.com/facebookresearch/social-catalysts"
     selected: y
 
-  # - title: "An Expandable Fully-actuated Aerial Vehicles Assembly: Trajectory Linearization Geometric Control Design and Real-world Prototype Implementation"
-  #   authors: "Kaidi Wang, Yishen Qi, <b>Chuanbeibei Shi</b>, Yushu Yu, Fuchun Sun, Dongjun Lee"
-  #   venue: "Submitted: Drones. 2022."
-  #   # paper_pdf: "/assets/publications/2022_flipfeed/paper.pdf"
-  #   # code: "https://github.com/msaveski/twitter_perspective_taking"
-  #   # data: "https://github.com/msaveski/twitter_perspective_taking"
-  #   selected: n
+  - title: "Constrained Control for Systems on Matrix Lie Groups with Uncertainties"
+    authors: "<b>Chuanbeibei Shi</b>, Yushu Yu, Yuwei Ma, Dong Eui CHANG"
+    venue: "International Journal of Robust and Nonlinear Control, 2023."
+    paper_pdf: "/assets/publications/RNC.pdf"
+    # code: "https://github.com/msaveski/twitter_perspective_taking"
+    # data: "https://github.com/msaveski/twitter_perspective_taking"
+    selected: y
 
-  # - title: "Development and implementation of a fully-actuated integrated aerial platform containing multiple unmanned aerial vehicles based on geometric model predictive control"
-  #   authors: "<b>Chuanbeibei Shi</b>, Yushu Yu"
-  #   venue: "Submitted: Micromachines. 2022."
-  #   selected: n
+  - title: "Design and Implementation of a Fully-Actuated Integrated Aerial Platform Based on Geometric Model Predictive Control"
+    authors: "<b>Chuanbeibei Shi</b>, Yushu Yu"
+    venue: "Micromachines, 2022."
+    paper_pdf: "/assets/publications/micromachines-13-01822-v2.pdf"
+    selected: y
 
-  # - title: "Real-time Multi-modal Active Vision for Object Detection on UAVs Equipped with Limited Field of View LiDAR and Camera"
-  #   authors: "<b>Chuanbeibei Shi</b>, Yushu Yu, Ganghua Lai, Mauro Bellone, Vincezo Lippiello"
-  #   venue: "Submitted: IROS'22: IEEE/RSJ International Conference on Intelligent Robots and Systems "
-  #   # paper_pdf: "/assets/publications/2021_dtox/paper.pdf"
-  #   # code: "https://github.com/msaveski/toxic_conversation_structure"
-  #   # data: "https://doi.org/10.7910/DVN/TRWPVB"
-  #   # video: "https://www.youtube.com/watch?v=JLkUgxH92pE"
-  #   selected: y
+  - title: "Expandable Fully Actuated Aerial Vehicle Assembly: Geometric Control Adapted from an Existing Flight Controller and Real-World Prototype Implementation"
+    authors: "<b>Chuanbeibei Shi</b>,  Kaidi Wang,  Yushu Yu."
+    venue: "Drones, 2022"
+    paper_pdf: "/assets/publications/drones-06-00272.pdf"
+    # code: "https://github.com/msaveski/toxic_conversation_structure"
+    # data: "https://doi.org/10.7910/DVN/TRWPVB"
+    # video: "https://www.youtube.com/watch?v=JLkUgxH92pE"
+    selected: y
 
+  - title: "A Hierarchical Control Scheme for Multiple Aerial Vehicle Transportation Systems with Uncertainties and State/Input Constraints"
+    authors: "Yushu Yu, <b>Chuanbeibei Shi</b>, Dan Shan, Vincenzo Lippiello, Yi Yang"
+    venue: "Applied Mathematical Modelling, 2022"
+    paper_pdf: "/assets/publications/AMM.pdf"
+    # code: "https://github.com/msaveski/toxic_conversation_structure"
+    # data: "https://doi.org/10.7910/DVN/TRWPVB"
+    # video: "https://www.youtube.com/watch?v=JLkUgxH92pE"
+    selected: y
+  
+  - title: "Constrained Control for Systems on Lie Groups with Uncertainties via Tube-based Model Predictive Control on Euclidean Spaces"
+    authors: "Yushu Yu, <b>Chuanbeibei Shi</b>, Yuwei Ma, Dong Eui CHANG"
+    venue: "International Conference on Cognitive Systems and Information Processing (ICCSIP), 2021"
+    # paper_pdf: ""
+    # code: "https://github.com/msaveski/toxic_conversation_structure"
+    # data: "https://doi.org/10.7910/DVN/TRWPVB"
+    # video: "https://www.youtube.com/watch?v=JLkUgxH92pE"
+    selected: y
+  
+  - title: "Multi-Agent Visual-Inertial Localization for Integrated Aerial Systems with Loose Fusion of Kinematics and Odometry"
+    authors: "Ganghua Lai, <b>Chuanbeibei Shi</b>, Kaidi Wang, Yushu Yu, Yiqun Dong"
+    venue: "Submitted: IEEE Robotics and Automation Letters, 2023. "
+    # paper_pdf: "/assets/publications/2021_dtox/paper.pdf"
+    # code: "https://github.com/msaveski/toxic_conversation_structure"
+    # data: "https://doi.org/10.7910/DVN/TRWPVB"
+    # video: "https://www.youtube.com/watch?v=JLkUgxH92pE"
+    selected: n
 
+  - title: "Tightly Fusion of Odometry and Kinematic Constraints for Multiple Aerial Vehicles in Physical Interconnection"
+    authors: "Yingjun Fan, <b>Chuanbeibei Shi</b>, Ganghua Lai, Yushu Yu, Yiqun Dong"
+    venue: "Submitted: IEEE Robotics and Automation Letters, 2023. "
+    # paper_pdf: "/assets/publications/2021_dtox/paper.pdf"
+    # code: "https://github.com/msaveski/toxic_conversation_structure"
+    # data: "https://doi.org/10.7910/DVN/TRWPVB"
+    # video: "https://www.youtube.com/watch?v=JLkUgxH92pE"
+    selected: n

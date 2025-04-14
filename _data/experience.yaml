@@ -1,10 +1,16 @@
 experiences:
 
-- place: "University of Toronto"
-  time: "Sep 2022 - June 2024 "
-  title: "M.Sc. student"
-  subtitle: "Computer Engineering"
+- place: "University of Bristol"
+  time: "Sep 2023 - Sep 2024 "
+  title: "MSc student"
+  subtitle: "Robotics"
   category: "school"
+
+- place: "Megvii"
+  time: "Sep 2022 - Jun 2023"
+  title: "Intern"
+  subtitle: "Autonomous Driving Algorithm Developer"
+  category: "work"
 
 - place: "North Carolina State University"
   time: "Summer 2021"
@@ -19,13 +25,13 @@ experiences:
   category: "work"
 
 - place: "Beijing Institute of Technology"
-  time: "July 2019 - present"
+  time: "July 2019 - Aug 2023"
   title: "Research Assistant"
-  subtitle: "School of Mechatronical Engineering"
+  subtitle: "Robot Perception and Control Theory"
   category: "work"
 
 - place: "Beijing Institute of Technology"
   time: "Sep 2018 - July 2022"
   title: "B.Sc. Student"
-  subtitle: "Mechatronics Engineering"
+  subtitle: "Mechatronics and Robotics"
   category: "school"
