@@ -1,4 +1,9 @@
 papers:
+  - title: "Tight Fusion of Odometry and Kinematic Constraints for Multiple Aerial Vehicles in Physical Interconnection"
+    authors: "Yingjun Fan, <b>Chuanbeibei Shi</b>, Ganghua Lai, Yushu Yu, Yiqun Dong"
+    venue: "IEEE International Conference on Robotics and Automation (ICRA), 2024."
+    # paper_pdf: "/assets/publications/2023_active_vision.pdf"
+    selected: y
 
   - title: "Real-Time Multi-Modal Active Vision for Object Detection on UAVs Equipped With Limited Field of View LiDAR and Camera"
     authors: "<b>Chuanbeibei Shi</b>,  Ganghua Lai, Yushu Yu, Mauro Bellone, Vincezo Lippiello"
@@ -57,15 +62,6 @@ papers:
   
   - title: "Multi-Agent Visual-Inertial Localization for Integrated Aerial Systems with Loose Fusion of Kinematics and Odometry"
     authors: "Ganghua Lai, <b>Chuanbeibei Shi</b>, Kaidi Wang, Yushu Yu, Yiqun Dong"
-    venue: "Submitted: IEEE Robotics and Automation Letters, 2023. "
-    # paper_pdf: "/assets/publications/2021_dtox/paper.pdf"
-    # code: "https://github.com/msaveski/toxic_conversation_structure"
-    # data: "https://doi.org/10.7910/DVN/TRWPVB"
-    # video: "https://www.youtube.com/watch?v=JLkUgxH92pE"
-    selected: n
-
-  - title: "Tightly Fusion of Odometry and Kinematic Constraints for Multiple Aerial Vehicles in Physical Interconnection"
-    authors: "Yingjun Fan, <b>Chuanbeibei Shi</b>, Ganghua Lai, Yushu Yu, Yiqun Dong"
     venue: "Submitted: IEEE Robotics and Automation Letters, 2023. "
     # paper_pdf: "/assets/publications/2021_dtox/paper.pdf"
     # code: "https://github.com/msaveski/toxic_conversation_structure"

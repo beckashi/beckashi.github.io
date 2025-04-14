@@ -1,3 +1,3 @@
 # Chuanbeibei Shi's Website
-Test it with:
+Test changes with:
 jekyll serve
