@@ -5,7 +5,8 @@
 #                and first-author papers get a "First author" label
 #   type         journal | conference  (sets the badge colour)
 #   venue_short  text shown in the badge
-#   optional     doi, pdf, code, video, slides, poster, note
+#   optional     doi, pdf, code, video, slides, poster, note,
+#                remark (a short line shown under the paper)
 # ------------------------------------------------------------------
 - title: "Froxels for Production: Ray-Level Inspection and Consensus-Guided Light-Field Rendering"
   authors: "Chuanbeibei Shi, Robin Kremer, Thorsten Herfet"
@@ -15,6 +16,7 @@
   type: conference
   year: 2026
   note: "Accepted"
+  remark: "This work will be presented by my co-authors at CVMP in London. Please feel welcome to reach out to them during the conference."
 
 - title: "Multi-Agent Visual-Inertial Localization for Integrated Aerial Systems With Loose Fusion of Odometry and Kinematics"
   authors: "Ganghua Lai, Chuanbeibei Shi, Kaidi Wang, Yushu Yu, Yiqun Dong, Antonio Franchi"

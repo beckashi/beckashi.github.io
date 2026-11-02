@@ -107,11 +107,9 @@
       {% include social.html %}
       <p>&copy; {{ site.time | date: "%Y" }} {{ info.name }} &middot; Last updated {{ site.time | date: "%B %Y" }}</p>
       <p class="credit">Originally based on a template by <a href="https://faculty.washington.edu/msaveski/" target="_blank" rel="noopener">Martin Saveski</a>.</p>
-      {%- if jekyll.environment == "production" %}
       <div class="visitor-map">
-        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=4OOB1kTAv4bYfh7R03rKlKy2mEFe9rulD7HE9718p54&cl=ffffff&w=a"></script>
+        <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=2_SDJa1Wc-fzOD16BsSuRlnrCL5TnFpQLX3SPDWrrgE&cl=ffffff&w=a"></script>
       </div>
-      {%- endif %}
     </div>
   </footer>
 

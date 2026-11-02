@@ -115,6 +115,9 @@ title: Home
         <p class="pub-title">{{ paper.title }}</p>
         <p class="pub-authors">{{ paper.authors | replace: info.name, me }}</p>
         <p class="pub-venue"><i>{{ paper.venue }}</i>{% if paper.details %}, {{ paper.details }}{% endif %}, {{ paper.year }}.{% if paper.note %} <span class="pub-note">{{ paper.note }}</span>{% endif %}</p>
+        {%- if paper.remark %}
+        <p class="pub-remark"><i class="fa fa-comments-o" aria-hidden="true"></i><span>{{ paper.remark }}</span></p>
+        {%- endif %}
         <div class="pub-links">
           {%- if paper.pdf %}<a class="pill" href="{{ paper.pdf | relative_url }}" target="_blank" rel="noopener"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF</a>{% endif %}
           {%- if paper.doi %}<a class="pill" href="https://doi.org/{{ paper.doi }}" target="_blank" rel="noopener"><i class="fa fa-external-link" aria-hidden="true"></i> DOI</a>{% endif %}

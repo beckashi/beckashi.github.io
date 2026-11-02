@@ -430,6 +430,19 @@ details.more .news { margin-top: 8px; }
   font-weight: 700;
 }
 
+.pub-body .pub-remark {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--accent-soft);
+  color: var(--text-2);
+  font-size: .88rem;
+  line-height: 1.5;
+}
+.pub-remark .fa { margin-top: 3px; color: var(--accent); }
+
 .pub-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
 .pub-links:empty { display: none; }
 .pill {
