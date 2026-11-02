@@ -1,0 +1,22 @@
+<li class="tl-item">
+  <div class="tl-head">
+    <h3 class="tl-title">{{ include.title }}</h3>
+    <span class="tl-when">{{ include.item.period }}</span>
+  </div>
+  <p class="tl-org">
+    {%- if include.item.url -%}
+      <a href="{{ include.item.url }}" target="_blank" rel="noopener">{{ include.org }}</a>
+    {%- else -%}
+      {{ include.org }}
+    {%- endif -%}
+    {%- if include.item.unit %} &middot; {{ include.item.unit }}{% endif -%}
+    {%- if include.item.location %}<span class="tl-loc"> &middot; {{ include.item.location }}</span>{% endif -%}
+  </p>
+  {%- if include.item.notes %}
+  <ul class="tl-notes">
+    {%- for note in include.item.notes %}
+    <li>{{ note | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+</li>

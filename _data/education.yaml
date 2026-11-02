@@ -1,0 +1,30 @@
+# ------------------------------------------------------------------
+# Education, newest first. `notes` lines accept Markdown.
+# ------------------------------------------------------------------
+- degree: "Ph.D. Student"
+  school: "Saarland University"
+  url: "https://www.nt.uni-saarland.de/"
+  unit: "Telecommunications Lab"
+  location: "Saarbrücken, Germany"
+  period: "Feb 2025 – Present"
+  notes:
+    - "Advisor: Prof. [Thorsten Herfet](https://www.nt.uni-saarland.de/people/thorsten-herfet/)"
+    - "Research on light-field scene representations, multi-view depth estimation and light-field rendering within the [FROST project](https://www.nt.uni-saarland.de/projects/frost/)."
+
+- degree: "M.Sc. in Robotics"
+  school: "University of Bristol"
+  url: "https://www.bristol.ac.uk/"
+  location: "Bristol, UK"
+  period: "Sep 2023 – Sep 2024"
+  notes:
+    - "Thesis: *Bio-inspired active motion and sensor fusion for uncrewed air vehicle environmental monitoring*"
+    - "Advisors: Prof. Shane Windsor and Dr. Bahadir Kocer"
+
+- degree: "B.Sc. in Robotics"
+  school: "Beijing Institute of Technology"
+  url: "https://english.bit.edu.cn/"
+  location: "Beijing, China"
+  period: "Aug 2018 – Jun 2022"
+  notes:
+    - "Distinguished Thesis: *Active vision for object detection on UAVs equipped with limited field-of-view LiDAR and camera*"
+    - "Advisors: Yushu Yu, Vincenzo Lippiello and Mauro Bellone"

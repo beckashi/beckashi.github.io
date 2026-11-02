@@ -1,8 +1,15 @@
-source:      .
-destination: ./_site
-includes:    ./_includes
-baseurl:    ""
+title: "Chuanbeibei Shi"
+url: "https://beckashi.github.io"
+baseurl: ""
 
+# Optional project pages: add Markdown files to _projects/ with `layout: project`.
 collections:
   projects:
     output: true
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules

@@ -1,0 +1,36 @@
+# ------------------------------------------------------------------
+# News, newest first. The 6 most recent are shown; older ones fold
+# under "Older news". `text` accepts Markdown, e.g. [link](https://...).
+# Add `highlight: true` to make an item stand out.
+# ------------------------------------------------------------------
+- date: "Oct 2026"
+  highlight: true
+  text: "My first-author paper **Froxels for Production: Ray-Level Inspection and Consensus-Guided Light-Field Rendering** has been accepted at **ACM CVMP 2026** in London."
+
+- date: "Feb 2026"
+  text: "Completed my first-year Ph.D. coursework alongside my research: **two Research Immersion Labs** and the courses **Image Compression** and **Audio/Visual Communication and Networks**."
+
+- date: "Oct 2025"
+  text: "The tendon-driven perching project I worked on at the Bio-Inspired Flight Lab, University of Bristol, was published at **IROS 2025** as [*Tendon-driven Grasper Design for Aerial Robot Perching on Tree Branches*](https://doi.org/10.1109/IROS60139.2025.11247040); I contributed to its early concept exploration."
+
+- date: "Feb 2025"
+  highlight: true
+  text: "I enrolled as a **Ph.D. student at Saarland University**, joining the [Telecommunications Lab](https://www.nt.uni-saarland.de/) to work on light-field scene representations in the [FROST project](https://www.nt.uni-saarland.de/projects/frost/)."
+
+- date: "Sep 2024"
+  text: "I completed my M.Sc. in Robotics at the University of Bristol."
+
+- date: "Jul 2024"
+  text: "Our paper on multi-agent visual-inertial localization for integrated aerial systems is published in [IEEE Robotics and Automation Letters](https://doi.org/10.1109/LRA.2024.3407579)."
+
+- date: "May 2024"
+  text: "Attending [ICRA 2024](https://2024.ieee-icra.org/) in Yokohama, Japan, with three of our papers presented in oral sessions: *Aerial Systems: Perception and Autonomy I*, *Aerial Systems: Mechanics and Control III* and *Multi-Robot SLAM*."
+
+- date: "Jan 2024"
+  text: "Our paper **Tight Fusion of Odometry and Kinematic Constraints for Multiple Aerial Vehicles in Physical Interconnection** was accepted to [ICRA 2024](https://2024.ieee-icra.org/)."
+
+- date: "Sep 2023"
+  text: "I started my M.Sc. in Robotics at the University of Bristol, with access to the Bristol Robotics Laboratory, one of the UK's leading centres for robotics research."
+
+- date: "Aug 2023"
+  text: "Our work on real-time multi-modal active vision for object detection on UAVs was accepted to [IEEE Robotics and Automation Letters](https://doi.org/10.1109/LRA.2023.3309575)."

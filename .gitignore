@@ -1,5 +1,10 @@
 .DS_Store
 */.DS_Store
+_site/
 .jekyll-cache
-_site/*
+.jekyll-metadata
+.sass-cache
+.bundle
+vendor/
+Gemfile.lock
 _snap_md5.txt

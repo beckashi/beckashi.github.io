@@ -1,70 +1,65 @@
-papers:
-  - title: "Tight Fusion of Odometry and Kinematic Constraints for Multiple Aerial Vehicles in Physical Interconnection"
-    authors: "Yingjun Fan, <b>Chuanbeibei Shi</b>, Ganghua Lai, Yushu Yu, Yiqun Dong"
-    venue: "IEEE International Conference on Robotics and Automation (ICRA), 2024."
-    # paper_pdf: "/assets/publications/2023_active_vision.pdf"
-    selected: y
+# ------------------------------------------------------------------
+# Selected publications, newest first (grouped by `year` on the page).
+# The full list is linked via Google Scholar.
+#   authors      plain text; your name is highlighted automatically,
+#                and first-author papers get a "First author" label
+#   type         journal | conference  (sets the badge colour)
+#   venue_short  text shown in the badge
+#   optional     doi, pdf, code, video, slides, poster, note
+# ------------------------------------------------------------------
+- title: "Froxels for Production: Ray-Level Inspection and Consensus-Guided Light-Field Rendering"
+  authors: "Chuanbeibei Shi, Robin Kremer, Thorsten Herfet"
+  venue: "ACM European Conference on Visual Media Production (CVMP)"
+  details: "London, UK"
+  venue_short: "CVMP"
+  type: conference
+  year: 2026
+  note: "Accepted"
 
-  - title: "Real-Time Multi-Modal Active Vision for Object Detection on UAVs Equipped With Limited Field of View LiDAR and Camera"
-    authors: "<b>Chuanbeibei Shi</b>,  Ganghua Lai, Yushu Yu, Mauro Bellone, Vincezo Lippiello"
-    venue: "IEEE Robotics and Automation Letters, 2023."
-    paper_pdf: "/assets/publications/2023_active_vision.pdf"
-    selected: y
- 
+- title: "Multi-Agent Visual-Inertial Localization for Integrated Aerial Systems With Loose Fusion of Odometry and Kinematics"
+  authors: "Ganghua Lai, Chuanbeibei Shi, Kaidi Wang, Yushu Yu, Yiqun Dong, Antonio Franchi"
+  venue: "IEEE Robotics and Automation Letters"
+  details: "vol. 9, no. 7, pp. 6504–6511"
+  venue_short: "RA-L"
+  type: journal
+  year: 2024
+  doi: "10.1109/LRA.2024.3407579"
 
-  - title: "Variable Admittance Interaction Control of UAVs via Deep Reinforcement Learning"
-    authors: "Yuting Feng, <b>Chuanbeibei Shi</b>, Jianrui Du, Yushu Yu, Fuchun Sun, Yixu Song"
-    venue: "IEEE International Conference on Robotics and Automation (ICRA), 2023."
-    paper_pdf: "/assets/publications/Variable_Admittance_icra.pdf"
-    # code: "https://github.com/facebookresearch/social-catalysts"
-    selected: y
+- title: "Tight Fusion of Odometry and Kinematic Constraints for Multiple Aerial Vehicles in Physical Interconnection"
+  authors: "Yingjun Fan, Chuanbeibei Shi, Ganghua Lai, Ruiheng Zhang, Yushu Yu, Fuchun Sun, Yiqun Dong"
+  venue: "IEEE International Conference on Robotics and Automation (ICRA)"
+  details: "pp. 3891–3897"
+  venue_short: "ICRA"
+  type: conference
+  year: 2024
+  doi: "10.1109/ICRA57147.2024.10610282"
 
-  - title: "Constrained Control for Systems on Matrix Lie Groups with Uncertainties"
-    authors: "<b>Chuanbeibei Shi</b>, Yushu Yu, Yuwei Ma, Dong Eui CHANG"
-    venue: "International Journal of Robust and Nonlinear Control, 2023."
-    paper_pdf: "/assets/publications/RNC.pdf"
-    # code: "https://github.com/msaveski/twitter_perspective_taking"
-    # data: "https://github.com/msaveski/twitter_perspective_taking"
-    selected: y
+- title: "Real-Time Multi-Modal Active Vision for Object Detection on UAVs Equipped With Limited Field of View LiDAR and Camera"
+  authors: "Chuanbeibei Shi, Ganghua Lai, Yushu Yu, Mauro Bellone, Vincenzo Lippiello"
+  venue: "IEEE Robotics and Automation Letters"
+  details: "vol. 8, no. 10, pp. 6571–6578"
+  venue_short: "RA-L"
+  type: journal
+  year: 2023
+  doi: "10.1109/LRA.2023.3309575"
+  pdf: "/assets/publications/2023_active_vision.pdf"
 
-  - title: "Design and Implementation of a Fully-Actuated Integrated Aerial Platform Based on Geometric Model Predictive Control"
-    authors: "<b>Chuanbeibei Shi</b>, Yushu Yu"
-    venue: "Micromachines, 2022."
-    paper_pdf: "/assets/publications/micromachines-13-01822-v2.pdf"
-    selected: y
+- title: "Constrained Control for Systems on Matrix Lie Groups with Uncertainties"
+  authors: "Chuanbeibei Shi, Yushu Yu, Yuwei Ma, Dong Eui Chang"
+  venue: "International Journal of Robust and Nonlinear Control"
+  details: "vol. 33, no. 5, pp. 3285–3311"
+  venue_short: "IJRNC"
+  type: journal
+  year: 2023
+  doi: "10.1002/rnc.6574"
+  pdf: "/assets/publications/RNC.pdf"
 
-  - title: "Expandable Fully Actuated Aerial Vehicle Assembly: Geometric Control Adapted from an Existing Flight Controller and Real-World Prototype Implementation"
-    authors: "<b>Chuanbeibei Shi</b>,  Kaidi Wang,  Yushu Yu."
-    venue: "Drones, 2022"
-    paper_pdf: "/assets/publications/drones-06-00272.pdf"
-    # code: "https://github.com/msaveski/toxic_conversation_structure"
-    # data: "https://doi.org/10.7910/DVN/TRWPVB"
-    # video: "https://www.youtube.com/watch?v=JLkUgxH92pE"
-    selected: y
-
-  - title: "A Hierarchical Control Scheme for Multiple Aerial Vehicle Transportation Systems with Uncertainties and State/Input Constraints"
-    authors: "Yushu Yu, <b>Chuanbeibei Shi</b>, Dan Shan, Vincenzo Lippiello, Yi Yang"
-    venue: "Applied Mathematical Modelling, 2022"
-    paper_pdf: "/assets/publications/AMM.pdf"
-    # code: "https://github.com/msaveski/toxic_conversation_structure"
-    # data: "https://doi.org/10.7910/DVN/TRWPVB"
-    # video: "https://www.youtube.com/watch?v=JLkUgxH92pE"
-    selected: y
-  
-  - title: "Constrained Control for Systems on Lie Groups with Uncertainties via Tube-based Model Predictive Control on Euclidean Spaces"
-    authors: "Yushu Yu, <b>Chuanbeibei Shi</b>, Yuwei Ma, Dong Eui CHANG"
-    venue: "International Conference on Cognitive Systems and Information Processing (ICCSIP), 2021"
-    # paper_pdf: ""
-    # code: "https://github.com/msaveski/toxic_conversation_structure"
-    # data: "https://doi.org/10.7910/DVN/TRWPVB"
-    # video: "https://www.youtube.com/watch?v=JLkUgxH92pE"
-    selected: y
-  
-  - title: "Multi-Agent Visual-Inertial Localization for Integrated Aerial Systems with Loose Fusion of Kinematics and Odometry"
-    authors: "Ganghua Lai, <b>Chuanbeibei Shi</b>, Kaidi Wang, Yushu Yu, Yiqun Dong"
-    venue: "Submitted: IEEE Robotics and Automation Letters, 2023. "
-    # paper_pdf: "/assets/publications/2021_dtox/paper.pdf"
-    # code: "https://github.com/msaveski/toxic_conversation_structure"
-    # data: "https://doi.org/10.7910/DVN/TRWPVB"
-    # video: "https://www.youtube.com/watch?v=JLkUgxH92pE"
-    selected: n
+- title: "A Hierarchical Control Scheme for Multiple Aerial Vehicle Transportation Systems with Uncertainties and State/Input Constraints"
+  authors: "Yushu Yu, Chuanbeibei Shi, Dan Shan, Vincenzo Lippiello, Yi Yang"
+  venue: "Applied Mathematical Modelling"
+  details: "vol. 109, pp. 651–678"
+  venue_short: "AMM"
+  type: journal
+  year: 2022
+  doi: "10.1016/j.apm.2022.05.013"
+  pdf: "/assets/publications/AMM.pdf"

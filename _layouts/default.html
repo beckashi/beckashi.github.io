@@ -1,176 +1,133 @@
 <!DOCTYPE html>
+{%- assign info = site.data.main_info -%}
+{%- if page.title and page.title != "Home" -%}
+  {%- assign page_title = page.title | append: " | " | append: info.name -%}
+{%- else -%}
+  {%- assign page_title = info.name -%}
+{%- endif -%}
+{%- assign page_url = page.url | replace: "index.html", "" | absolute_url -%}
 <html lang="en">
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
-  <meta name="description" content="Chuanbeibei Shi">
-  <meta name="author" content="Chuanbeibei Shi">
-  <meta property="og:title" content="Chuanbeibei Shi" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://cshi.github.io/" />
-  <meta property="og:url" content="https://cshi.github.io/" />
-  <meta property="og:site_name" content="Chuanbeibei Shi" />
-  <link rel="canonical" href="hhttps://cshi.github.io/" />
-  <link rel="canonical" href="hhttps://cshi.github.io/" />
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page.description | default: info.description }}">
+  <meta name="author" content="{{ info.name }}">
+  <link rel="canonical" href="{{ page_url }}">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <!-- Link previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ info.name }}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page.description | default: info.description }}">
+  <meta property="og:url" content="{{ page_url }}">
+  <meta property="og:image" content="{{ info.profile_pic | absolute_url }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1117" media="(prefers-color-scheme: dark)">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/skeleton/normalize.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/libs/external/skeleton/skeleton.css" | prepend: site.baseurl }}>
-  <link rel="stylesheet" href={{ "/libs/custom/my_css.css" | prepend: site.baseurl }}>
+  <!-- Apply a saved light/dark choice before first paint -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
 
-  <!-- JQuery
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src={{ "/libs/external/jquery-3.1.1.min.js" | prepend: site.baseurl }}></script>
+  <!-- Fonts (loaded without blocking rendering; system fonts are the fallback) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" media="print" onload="this.media='all'">
 
-  <!-- Font-Awesome
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/font-awesome-4.7.0/css/font-awesome.min.css" | prepend: site.baseurl }}>
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/libs/external/font-awesome-4.7.0/css/font-awesome.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/libs/external/academicons-1.8.6/css/academicons.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/libs/custom/site.css' | relative_url }}">
 
-  <!-- Academicons
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/academicons-1.8.6/css/academicons.min.css" | prepend: site.baseurl }}>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="{{ '/libs/icon.svg' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/libs/icon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/libs/apple-touch-icon.png' | relative_url }}">
 
-  <!-- Skeleton tabs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/skeleton_tabs/skeleton-tabs.css" | prepend: site.baseurl }}>
-  <script src={{ "/libs/external/skeleton_tabs/skeleton-tabs.js" | prepend: site.baseurl }}></script>
+  {%- if page.url == "/" %}
+  <!-- Structured data for search engines -->
+  {%- assign profile_keys = "google_scholar,github,linkedin,youtube,orcid" | split: "," %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": {{ info.name | jsonify }},
+    "url": {{ site.url | jsonify }},
+    "image": {{ info.profile_pic | absolute_url | jsonify }},
+    "jobTitle": {{ info.position | jsonify }},
+    "affiliation": { "@type": "Organization", "name": {{ info.institution | jsonify }} },
+    "sameAs": [{% assign first = true %}{% for key in profile_keys %}{% if info[key] %}{% unless first %}, {% endunless %}{{ info[key] | jsonify }}{% assign first = false %}{% endif %}{% endfor %}]
+  }
+  </script>
+  {%- endif %}
 
-  <!-- Timeline
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/timeline.css" | prepend: site.baseurl }}>
-
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<link rel="stylesheet" href={{ "/libs/external/github-prettify-theme.css" | prepend: site.baseurl }}>-->
-  <script src={{ "/libs/custom/my_js.js" | prepend: site.baseurl }}></script>
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
-  <link rel="shortcut icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
-
+  <script src="{{ '/libs/custom/site.js' | relative_url }}" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-
-    <section class="header">
-      <div class="row">
-        <div class="three columns">
-          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'></a>
-        </div>
-        <div class="nine columns main-description">
-            <h1>{{ site.data.main_info.name }}</h1>
-            <p>{{ site.data.main_info.title }}</p>
-            <p>{{ site.data.main_info.email }}</p>
-            <p>
-              <!-- <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-              <!-- <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </span> -->
-              <span onclick="window.open('{{ site.data.main_info.youtube }}')" style="cursor: pointer">
-                <i class="fa fa-youtube-play" aria-hidden="true"></i>
-              </span>
-
-              <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              </span>
-
-              <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </span>
-
-              <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
-                <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
-              </span>
-
-              <span onclick="window.open('{{ site.data.main_info.wechat }}')" style="cursor: pointer">
-                <i class="fa fa-weixin" aria-hidden="true"></i>
-              </span>
-            </p>
-        </div>
-      </div>
-    </section>
-
-    <div class="navbar-spacer"></div>
-    <nav class="navbar">
-      <div class="container">
-        <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#news" | prepend: site.baseurl }}>News</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#news" | prepend: site.baseurl }}>News</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl }}>Publications</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#projects" | prepend: site.baseurl }}>Projects</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl }}>Vita</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    {{ content}}
-
-    <div class="footer">
-      <div class="row">
-        <div class="four columns">
-          {{ site.data.main_info.name }}
-        </div>
-        <div class="four columns">
-          {{ site.data.main_info.email }}
-        </div>
-        <div class="four columns">
-          <!-- <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </span> -->
-          <span onclick="window.open('{{ site.data.main_info.youtube }}')" style="cursor: pointer">
-            <i class="fa fa-youtube-play" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
-            <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.wechat }}')" style="cursor: pointer">
-            <i class="fa fa-weixin" aria-hidden="true"></i>
-          </span>
-        </div>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ info.name }}</a>
+      <div class="topbar-actions">
+        <nav id="site-nav" class="nav" aria-label="Main">
+          <a href="{{ '/' | relative_url }}#news">News</a>
+          <a href="{{ '/' | relative_url }}#education">Education</a>
+          <a href="{{ '/' | relative_url }}#publications">Publications</a>
+          <a href="{{ '/' | relative_url }}#projects">Projects</a>
+          <a href="{{ '/' | relative_url }}#experience">Experience</a>
+          {%- if info.cv %}
+          <a class="nav-cv" href="{{ info.cv | relative_url }}" target="_blank" rel="noopener">CV</a>
+          {%- endif %}
+        </nav>
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch between light and dark mode" title="Light / dark mode">
+          <i class="fa fa-moon-o icon-moon" aria-hidden="true"></i>
+          <i class="fa fa-sun-o icon-sun" aria-hidden="true"></i>
+        </button>
+        <button class="icon-btn menu-btn" type="button" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
       </div>
     </div>
+  </header>
 
-  </div>
+  <main id="main" class="container">
+    {{ content }}
+  </main>
 
-  <!-- Google Analytics -->
-<!--   {% include google_analytics.html %} -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T4H2ET74W0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <footer class="footer">
+    <div class="container">
+      {% include social.html %}
+      <p>&copy; {{ site.time | date: "%Y" }} {{ info.name }} &middot; Last updated {{ site.time | date: "%B %Y" }}</p>
+      <p class="credit">Originally based on a template by <a href="https://faculty.washington.edu/msaveski/" target="_blank" rel="noopener">Martin Saveski</a>.</p>
+      {%- if jekyll.environment == "production" %}
+      <div class="visitor-map">
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=4OOB1kTAv4bYfh7R03rKlKy2mEFe9rulD7HE9718p54&cl=ffffff&w=a"></script>
+      </div>
+      {%- endif %}
+    </div>
+  </footer>
 
-  gtag('config', 'G-T4H2ET74W0');
-</script>
+  {%- if info.wechat %}
+  <dialog id="wechat-dialog" class="qr-dialog" aria-label="WeChat QR code">
+    <button class="qr-close" type="button" data-close aria-label="Close">&times;</button>
+    <img src="{{ info.wechat | relative_url }}" alt="WeChat QR code" width="300" height="319" loading="lazy">
+    <p>Scan to connect on WeChat</p>
+  </dialog>
+  {%- endif %}
+
+  {%- if jekyll.environment == "production" and info.google_analystics_tracking_id %}
+  {% include google_analytics.html %}
+  {%- endif %}
 
   <!-- do not remove -->
   <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>

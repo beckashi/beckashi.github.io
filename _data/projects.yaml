@@ -1,31 +1,52 @@
-projects:
-  - title: "Active Vision for Object Detection on UAVs with Camera and LiDAR "
-    subtitle: "Combining CNN with perception constraints to keep the region of interest in the Field-of-view (FOV) of the
-camera and LiDAR"
-    # thumbnail: "assets/projects/2016_network-ab/thumbnail.jpg"
-    # url: "projects/2016_network-ab-testing.html"
-    selected: y
+# ------------------------------------------------------------------
+# Projects, shown as cards in this order.
+#   optional  image (e.g. /assets/projects/<name>.jpg, ideally 16:9),
+#             links: a list of {label, url}
+# ------------------------------------------------------------------
+- title: "Multi-View Depth Estimation for Planar Light-Field Arrays"
+  period: "2025"
+  where: "Saarland University"
+  summary: "Research Immersion Lab project evaluating multi-view depth estimation algorithms on planar light-field camera arrays, as part of the FROST project."
+  tags: ["Light fields", "Depth estimation", "3D vision"]
+  links:
+    - label: "Project page"
+      url: "https://www.nt.uni-saarland.de/theses/chuanbeibeishi2025/"
 
-  - title: "Geometric Tube-based MPC for Aerial Robot"
-    subtitle: "Developed the real-world program of the MPC for aerial robots,"
-    # thumbnail: "assets/projects/2016_human-atlas/thumbnail.png"
-    # url: "projects/2016_human-atlas.html"
-    selected: y
+- title: "Active Vision for Object Detection on UAVs with Camera and LiDAR"
+  period: "Jul 2021 – Aug 2023"
+  where: "Beijing Institute of Technology"
+  summary: "Turned LiDAR point clouds into multi-channel images and fused them with camera images for CNN object detection. Derived perception constraints that keep the region of interest in both sensors' limited fields of view, built them into a model predictive controller, and flew it on a real small-scale UAV."
+  tags: ["Active vision", "LiDAR–camera fusion", "MPC", "Deep learning"]
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.1109/LRA.2023.3309575"
 
-  - title: "Robust Control of Multiple Aerial-Vehicle Transportation Systems"
-    subtitle: "A hierarchical control scheme for multiple aerial-vehicle transportation systems"
-    # thumbnail: "assets/projects/2015_jun/thumbnail.png"
-    # url: "projects/2015_jun.html"
-    selected: y
+- title: "Geometric Tube-Based MPC for Aerial Robots"
+  period: "Jul 2019 – Mar 2021"
+  where: "Beijing Institute of Technology"
+  summary: "Constrained control for systems on manifolds with uncertainties and input/state constraints, via tube-based MPC on Euclidean space. Proved input-to-state stability and recursive feasibility, and implemented the controller on real aerial robots."
+  tags: ["Geometric control", "Tube MPC", "Lie groups"]
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.1002/rnc.6574"
 
-  - title: "Obstacle Avoidance Car Based on Raspberry Pi and Arduino "
-    subtitle: "Object detection to identify cars and blocks"
-    # thumbnail: "assets/projects/2014_item-cold-start/thumbnail.jpg"
-    # url: "projects/2014_item-cold-start.html"
-    selected: n
+- title: "Robust Control of Multiple Aerial-Vehicle Transportation Systems"
+  period: "Dec 2020 – Sep 2021"
+  where: "Beijing Institute of Technology"
+  summary: "Modelled multi-UAV cooperative transportation systems and designed a hierarchical control scheme that handles uncertainties and state/input constraints, compared against existing controllers in MATLAB simulation."
+  tags: ["Multi-robot systems", "Robust control"]
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.1016/j.apm.2022.05.013"
 
-  - title: "Rotor-Wing Amphibious Unmanned Aerial Vehicle (UAV)"
-    subtitle: "Final positioning of the target motion state of the submarine."
-    # thumbnail: "assets/projects/2009_connect-four/thumbnail.png"
-    # url: "projects/2009_connect-four.html"
-    selected: n
+- title: "Obstacle-Avoidance Car with Raspberry Pi and Arduino"
+  period: "Sep 2020 – May 2021"
+  where: "Beijing Institute of Technology"
+  summary: "Real-time YOLOv3 detection of cars and blocks on a Raspberry Pi camera, combined with ultrasonic and infrared sensing and Raspberry Pi-to-Arduino serial motor control for autonomous obstacle avoidance."
+  tags: ["Embedded vision", "YOLO", "Raspberry Pi"]
+
+- title: "Rotor-Wing Amphibious UAV"
+  period: "Sep 2018 – Oct 2019"
+  where: "Beijing Institute of Technology"
+  summary: "Modelled an amphibious quadrotor that keeps a submarine-style hull, with a retractable four-rotor structure for switching between flight and diving, plus onboard sensors and cameras for environmental monitoring."
+  tags: ["UAV design", "Modelling"]

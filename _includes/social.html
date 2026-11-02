@@ -1,0 +1,24 @@
+{%- assign info = site.data.main_info -%}
+<ul class="social" aria-label="Contact and profiles">
+  {%- if info.email_user %}
+  <li><a href="#" data-email-user="{{ info.email_user }}" data-email-domain="{{ info.email_domain }}" title="Email" aria-label="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+  {%- endif %}
+  {%- if info.google_scholar %}
+  <li><a href="{{ info.google_scholar }}" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a></li>
+  {%- endif %}
+  {%- if info.orcid %}
+  <li><a href="{{ info.orcid }}" target="_blank" rel="noopener" title="ORCID" aria-label="ORCID"><i class="ai ai-orcid" aria-hidden="true"></i></a></li>
+  {%- endif %}
+  {%- if info.github %}
+  <li><a href="{{ info.github }}" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+  {%- endif %}
+  {%- if info.linkedin %}
+  <li><a href="{{ info.linkedin }}" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+  {%- endif %}
+  {%- if info.youtube %}
+  <li><a href="{{ info.youtube }}" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+  {%- endif %}
+  {%- if info.wechat %}
+  <li><a href="{{ info.wechat | relative_url }}" target="_blank" rel="noopener" data-wechat title="WeChat" aria-label="WeChat"><i class="fa fa-weixin" aria-hidden="true"></i></a></li>
+  {%- endif %}
+</ul>

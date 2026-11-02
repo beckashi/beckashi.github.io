@@ -1,11 +1,38 @@
+# ------------------------------------------------------------------
+# Basic profile info: used in the page header, footer and metadata.
+# Remove (or comment out) any link to hide its icon.
+# ------------------------------------------------------------------
 name: "Chuanbeibei Shi"
-title: "MSc, University of Bristol"
-email: "lg23863[AT]bristol.ac.uk"
+position: "Ph.D. Student"
+lab: "Telecommunications Lab"
+lab_url: "https://www.nt.uni-saarland.de/"
+institution: "Saarland University"
+institution_url: "https://www.uni-saarland.de/"
+location: "Saarbrücken, Germany"
+
+# Shown as "shi [at] nt.uni-saarland.de"; the mail link is assembled in the browser to deter spam bots.
+email_user: "shi"
+email_domain: "nt.uni-saarland.de"
+
+# One-sentence summary used by search engines and link previews.
+description: "Chuanbeibei Shi is a Ph.D. student at Saarland University working on 3D computer vision: light-field scene representations, depth estimation and RGB–depth sensor fusion."
+
 profile_pic: "/assets/profile-pics/me.jpg"
-# twitter: "https://twitter.com/msaveski"  #orcid
-youtube: "https://www.youtube.com/channel/UCpOn5joVgxZgpCSADUcBwwg"
-linkedin: "https://www.linkedin.com/in/shicbb/"
-github: "https://github.com/beckashi"
+# cv: "/assets/cv/cv_web.pdf"   # uncomment (and add the PDF) to show a CV button
+
+interests:
+  - "3D computer vision"
+  - "Depth estimation"
+  - "RGB–depth sensor fusion"
+  - "Light fields & rendering"
+  - "3D scene representations"
+  - "Robot perception"
+
 google_scholar: "https://scholar.google.com/citations?user=WMa5iIUAAAAJ&hl=en"
-wechat: "/assets/profile-pics/wechat.jpg"
+github: "https://github.com/beckashi"
+linkedin: "https://www.linkedin.com/in/shicbb/"
+youtube: "https://www.youtube.com/channel/UCpOn5joVgxZgpCSADUcBwwg"
+# wechat: "/assets/profile-pics/wechat.jpg"   # QR code image; uncomment to show a WeChat icon
+# orcid: "https://orcid.org/0000-0000-0000-0000"
+
 google_analystics_tracking_id: 'G-T4H2ET74W0'
