@@ -43,7 +43,7 @@ lab_profile: "https://www.nt.uni-saarland.de/people/chuanbeibei-shi/"
 
 # Search engine ownership checks: paste the code from Google Search Console
 # ("HTML tag" method) or Bing Webmaster Tools, then uncomment.
-# google_site_verification: "paste-code-here"
+google_site_verification: "-_ugNTXma4vP74Y-O1CQn9aKg_2lcpSxcrZat4D0a3Y"
 # bing_site_verification: "paste-code-here"
 
 google_analystics_tracking_id: 'G-T4H2ET74W0'
