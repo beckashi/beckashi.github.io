@@ -31,7 +31,7 @@ title: Home
 
   <div class="bio">
     <p>
-      I am a Ph.D. student at the <a href="{{ info.lab_url }}" target="_blank" rel="noopener">Telecommunications Lab</a> of Saarland University, which I joined in February 2025.
+      I am Chuanbeibei Shi, a Ph.D. student at the <a href="{{ info.lab_url }}" target="_blank" rel="noopener">Telecommunications Lab</a> of Saarland University, which I joined in February 2025.
       My Ph.D. is funded by the <a href="https://www.nt.uni-saarland.de/news/2023-09-13-sijp/" target="_blank" rel="noopener">Saarland/Intel Joint Program on the Future of Graphics and Media</a>.
       I work on <b>3D computer vision</b> for next-generation visual media within the
       <a href="https://www.nt.uni-saarland.de/projects/frost/" target="_blank" rel="noopener">FROST project</a>:
@@ -182,7 +182,7 @@ title: Home
       <h3 class="sub-title">Reviewer</h3>
       <ul class="plain-list">
         {%- for venue in site.data.service.reviewer %}
-        <li>{{ venue }}</li>
+        <li>{{ venue | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>
         {%- endfor %}
       </ul>
     </div>

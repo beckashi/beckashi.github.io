@@ -3,6 +3,8 @@
 # Remove (or comment out) any link to hide its icon.
 # ------------------------------------------------------------------
 name: "Chuanbeibei Shi"
+given_name: "Chuanbeibei"
+family_name: "Shi"
 position: "Ph.D. Student"
 lab: "Telecommunications Lab"
 lab_url: "https://www.nt.uni-saarland.de/"
@@ -33,6 +35,15 @@ github: "https://github.com/beckashi"
 linkedin: "https://www.linkedin.com/in/shicbb/"
 youtube: "https://www.youtube.com/channel/UCpOn5joVgxZgpCSADUcBwwg"
 # wechat: "/assets/profile-pics/wechat.jpg"   # QR code image; uncomment to show a WeChat icon
-# orcid: "https://orcid.org/0000-0000-0000-0000"
+orcid: "https://orcid.org/0000-0001-6103-1183"
+
+# Official university profile: not shown as an icon, but tells search
+# engines that this website and that page describe the same person.
+lab_profile: "https://www.nt.uni-saarland.de/people/chuanbeibei-shi/"
+
+# Search engine ownership checks: paste the code from Google Search Console
+# ("HTML tag" method) or Bing Webmaster Tools, then uncomment.
+# google_site_verification: "paste-code-here"
+# bing_site_verification: "paste-code-here"
 
 google_analystics_tracking_id: 'G-T4H2ET74W0'

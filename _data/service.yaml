@@ -1,12 +1,9 @@
 # ------------------------------------------------------------------
-# Academic service and honors.
+# Academic service and honors. Lines accept Markdown (**bold** etc.).
 # ------------------------------------------------------------------
 reviewer:
-  - "IEEE Robotics and Automation Letters (RA-L)"
-  - "IEEE Transactions on Automation Science and Engineering (T-ASE)"
-  - "IEEE International Conference on Robotics and Automation (ICRA)"
-  - "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
-  - "IEEE International Conference on Intelligent Transportation Systems (ITSC)"
+  - "**Journals:** RA-L, T-ASE"
+  - "**Conferences:** ICRA, IROS, ITSC"
 
 honors:
   - year: "2022"
