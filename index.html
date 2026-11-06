@@ -174,10 +174,22 @@ title: Home
   </ol>
 </section>
 
-<!-- ========== SERVICE & HONORS ========== -->
+<!-- ========== TEACHING, SERVICE & HONORS ========== -->
 <section id="service" class="section">
-  <h2 class="section-title">Service &amp; Honors</h2>
-  <div class="two-col">
+  <h2 class="section-title">Teaching, Service &amp; Honors</h2>
+  <div class="three-col">
+    <div>
+      <h3 class="sub-title">Teaching</h3>
+      <ul class="plain-list">
+        {%- for item in site.data.service.teaching %}
+        <li>
+          <b>{{ item.role }}</b>,
+          {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.course | escape }}</a>{% else %}{{ item.course | escape }}{% endif %}
+          <span class="list-meta">{{ item.org }} &middot; {{ item.term }}</span>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
     <div>
       <h3 class="sub-title">Reviewer</h3>
       <ul class="plain-list">

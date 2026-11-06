@@ -1,6 +1,14 @@
 # ------------------------------------------------------------------
-# Academic service and honors. Lines accept Markdown (**bold** etc.).
+# Teaching, academic service and honors.
+# Reviewer lines accept Markdown (**bold** etc.).
 # ------------------------------------------------------------------
+teaching:
+  - role: "Teaching Assistant"
+    course: "Digital Transmission & Signal Processing (DTSP)"
+    url: "https://www.nt.uni-saarland.de/education/dtsp/"
+    org: "Saarland University"
+    term: "Winter term 2026/27"
+
 reviewer:
   - "**Journals:** RA-L, T-ASE"
   - "**Conferences:** ICRA, IROS, ITSC"
